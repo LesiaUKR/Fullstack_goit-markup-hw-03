@@ -1,0 +1,215 @@
+/*голубой текст акцент, фон активный элемент  2196f3
+  черный тескт Лого 000000
+  навигации, фильтры цвет текста черный, заголовки картинок 212121
+  контакты цвет серый, подписи картинок 757575
+  белый цвет текста основной FFFFFF 100%
+  белый цвет текста контакты FFFFFF 60%
+  фон подвал, фон герой - 2F303A
+  фон неактивные фильтры - F5F4FA
+  Лого шрифт Raleway 700
+  Roboto- 400, 500, 700, 900
+  фон футтер, фон герой 2F303A
+  фон наша команда F5F4FA
+  фон белый FFFFFF
+  фон белый E5E5E5
+  убрать точки в списке гдобально
+  ul {
+  list-style: none;
+}заголовки секций шрифт цвет - 212121
+  */
+
+:root {
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-text-color: #757575;
+  --logo-text-color: #000000;
+  --secondary-bg-color: #2f303a;
+  --button-accent-color: #188ce8;
+  --third-bg-color: #f5f4fa;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: Roboto, monospace;
+  letter-spacing: 0.03em;
+}
+/* List without dots design*/
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*WebStudio Logo header*/
+.logo {
+  font-family: Raleway, sans-serif;
+  color: var(--logo-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.accent {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/*nav font color*/
+.nav-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link-active {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/*contact information font color*/
+.contact-list .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-list .link:hover,
+.contact-list .link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+/*h2 section font color*/
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.hero {
+  background: var(--secondary-bg-color);
+}
+/*Hero font color*/
+.hero-title {
+  color: var(--primary-white-color);
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button-primary {
+  font-family: inherit;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-primary:focus,
+.button-primary:hover {
+  background: var(--button-accent-color);
+}
+/*Особенности*/
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*Наша команда*/
+.section-team {
+  background: var(--third-bg-color);
+}
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-list .card-description {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/*Подвал*/
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer .text {
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*WebStudio Logo footer*/
+.footer .logo {
+  font-family: Raleway, sans-serif;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/*contacts footer*/
+.footer .link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--primary-white-color);
+}
+/*Фильтры Портфолио Наши работы*/
+.button-list .button {
+  color: var(--title-text-color);
+  background-color: var(--third-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-list .button:hover,
+.button-list .button:focus {
+  background: var(--button-accent-color);
+  color: var(--primary-white-color);
+  border-color: transparent;
+}
+.portfolio .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio .card-description {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
