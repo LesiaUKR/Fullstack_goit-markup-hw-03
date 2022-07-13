@@ -12,7 +12,7 @@
   фон наша команда F5F4FA
   фон белый FFFFFF
   фон белый E5E5E5
-  убрать точки в списке гдобально
+  убрать точки в списке глобально
   ul {
   list-style: none;
 }заголовки секций шрифт цвет - 212121
@@ -111,6 +111,7 @@ a {
   text-transform: uppercase;
 }
 .button-primary {
+  padding: 10px 32px;
   font-family: inherit;
   color: var(--primary-white-color);
   background: var(--accent-color);
