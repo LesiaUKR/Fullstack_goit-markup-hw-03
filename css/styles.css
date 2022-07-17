@@ -35,15 +35,35 @@ body {
   font-family: Roboto, monospace;
   letter-spacing: 0.03em;
 }
+/* Container index*/
+.container {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+/* Section padding*/
+.section {
+  padding-bottom: 94px;
+  margin: 0px;
+}
 /* List without dots design*/
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+}
 /*WebStudio Logo header*/
 .logo {
+  width: 145px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: Raleway, sans-serif;
   color: var(--logo-text-color);
   font-weight: 700;
@@ -60,6 +80,8 @@ a {
 
 /*nav font color*/
 .nav-link {
+  display: block
+  padding: 32px 0px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -71,6 +93,7 @@ a {
   color: var(--accent-color);
 }
 .nav-link-active {
+  padding: 32px 0px;
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
@@ -92,6 +115,8 @@ a {
 }
 /*h2 section font color*/
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -101,9 +126,12 @@ a {
 
 .hero {
   background: var(--secondary-bg-color);
+  text-align: center;
 }
 /*Hero font color*/
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   font-size: 44px;
   line-height: 1.36;
@@ -111,7 +139,9 @@ a {
   text-transform: uppercase;
 }
 .button-primary {
+  display: inline-block;
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   color: var(--primary-white-color);
   background: var(--accent-color);
@@ -128,7 +158,22 @@ a {
   background: var(--button-accent-color);
 }
 /*Особенности*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .feature-list .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -136,11 +181,15 @@ a {
   text-transform: uppercase;
 }
 .feature-list .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.71;
 }
 /*Наша команда*/
 .section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--third-bg-color);
 }
 .team-list .title {
@@ -157,6 +206,8 @@ a {
 }
 /*Подвал*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 .footer .text {
@@ -167,6 +218,9 @@ a {
 }
 /*WebStudio Logo footer*/
 .footer .logo {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin: 0px;
   font-family: Raleway, sans-serif;
   color: var(--primary-white-color);
   font-weight: 700;
@@ -185,6 +239,11 @@ a {
 }
 /*Фильтры Портфолио Наши работы*/
 .button-list .button {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
+  padding: 6px 22px;
+  font-weight: 700;
   color: var(--title-text-color);
   background-color: var(--third-bg-color);
   font-family: inherit;
