@@ -27,6 +27,7 @@
   --secondary-bg-color: #2f303a;
   --button-accent-color: #188ce8;
   --third-bg-color: #f5f4fa;
+  --botom-header-br-color: #ececec;
 }
 
 body {
@@ -37,7 +38,7 @@ body {
 }
 /* Container index*/
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -61,9 +62,11 @@ img {
 }
 /*WebStudio Logo header*/
 .logo {
-  width: 145px;
+  display: block;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
+
   font-family: Raleway, sans-serif;
   color: var(--logo-text-color);
   font-weight: 700;
@@ -77,11 +80,25 @@ img {
   font-size: 26px;
   line-height: 1.19;
 }
-
-/*nav font color*/
+/*nav*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
-  display: block
-  padding: 32px 0px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -93,7 +110,10 @@ img {
   color: var(--accent-color);
 }
 .nav-link-active {
-  padding: 32px 0px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
@@ -101,7 +121,15 @@ img {
   letter-spacing: 0.02em;
 }
 /*contact information font color*/
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+.contact-list .item + .item {
+  margin-left: 50px;
+}
 .contact-list .link {
+  display: block;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -128,9 +156,14 @@ img {
   background: var(--secondary-bg-color);
   text-align: center;
 }
-/*Hero font color*/
+/*Hero*/
+.hero section {
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 30px;
   color: var(--primary-white-color);
   font-size: 44px;
@@ -170,6 +203,13 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-list .item {
+  width: 270px;
 }
 .feature-list .title {
   margin-top: 0px;
