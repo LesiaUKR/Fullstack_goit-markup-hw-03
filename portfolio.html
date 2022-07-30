@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!--Fonts start-->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!--Fonts end-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -17,7 +19,7 @@
   </head>
   <body class="body">
     <!--Верхняя линия-->
-    <header>
+    <header class="header">
       <div class="container main-nav">
         <nav class="nav">
           <a class="logo" href=""><span class="accent">Web</span>Studio</a>
@@ -49,19 +51,19 @@
         <div class="container button">
           <h1 hidden>Наши работы</h1>
           <ul class="button-list">
-            <li class="item">
+            <li class="button-item">
               <button type="button" class="button">Все</button>
             </li>
-            <li class="item">
+            <li class="button-item">
               <button type="button" class="button">Веб-сайты</button>
             </li>
-            <li class="item">
+            <li class="button-item">
               <button type="button" class="button">Приложения</button>
             </li>
-            <li class="item">
+            <li class="button-item">
               <button type="button" class="button">Дизайн</button>
             </li>
-            <li class="item">
+            <li class="button-item">
               <button type="button" class="button">Маркетинг</button>
             </li>
           </ul>
@@ -215,12 +217,19 @@
       <div class="container">
         <a href="" class="logo"
           ><span class="accent">Web</span
-          ><span class="logo footer">Studio</span></a
-        >
-        <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
-        <br />
-        <a href="" class="link">info@devstudio.com</a><br />
-        <a href="" class="link">+38 096 111 11 11</a><br />
+          ><span class="logo footer">Studio</span>
+        </a>
+        <ul class="footer-contact-list">
+          <li card="footer-item">
+            <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
+          </li>
+          <li card="footer-item"">
+            <a href="" class="link">info@devstudio.com</a>
+          </li>
+          <li card="footer-item"">
+            <a href="" class="link">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

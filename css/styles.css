@@ -46,6 +46,7 @@ body {
 }
 /* Section padding*/
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
   margin: 0px;
 }
@@ -61,6 +62,14 @@ a {
 }
 img {
   display: block;
+}
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+p {
+  margin: 0px;
 }
 /*WebStudio Logo header*/
 .logo {
@@ -83,6 +92,9 @@ img {
   line-height: 1.19;
 }
 /*nav*/
+.header {
+  border-bottom: 1px solid var(--botom-header-br-color);
+}
 .main-nav {
   width: 1200px;
   padding-right: 15px;
@@ -165,15 +177,15 @@ img {
 }
 /*Hero*/
 .hero section {
-  height: 600px;
+  align-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 }
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
   color: var(--primary-white-color);
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -258,13 +270,6 @@ img {
   padding-bottom: 94px;
   background: var(--third-bg-color);
 }
-.team-list .title {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
 .team-list {
   display: flex;
 }
@@ -274,12 +279,28 @@ img {
 .card:last-child {
   margin-right: 0px;
 }
-.team-list .card-description {
+.team-card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list .title {
+  padding-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-.team-list.card-description:last-child.card-description:last-child {
+.team-list .card-name {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-list.card-name:last-child.card-description:last-child {
   margin-right: 0px;
 }
 /*Подвал*/
@@ -289,6 +310,7 @@ img {
   background-color: var(--secondary-bg-color);
 }
 .footer .text {
+  margin-bottom: 9px;
   color: var(--primary-white-color);
   font-weight: 400;
   font-size: 14px;
@@ -307,32 +329,27 @@ img {
   line-height: 1.19;
 }
 /*contacts footer*/
-.footer .link {
+.footer-contact-list .link {
+  display: block;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer .link:hover,
-.footer .link:focus {
+.footer-contact-list .link:hover,
+.footer-contact-list .link:focus {
   color: var(--primary-white-color);
 }
 /*Фильтры Портфолио Наши работы*/
-.section.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
 .logo.footer {
   display: inline;
 }
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .button-list .button {
-  margin-right: 8px;
-  margin-bottom: 50px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-color: transparent;
   padding: 6px 22px;
   font-weight: 700;
@@ -348,9 +365,15 @@ img {
 }
 .button-list .button:hover,
 .button-list .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   background: var(--button-accent-color);
   color: var(--primary-white-color);
   border-color: transparent;
+}
+.button-item {
+  display: flex;
+  margin-right: 8px;
 }
 .container .portfolio {
   width: 1200px;
@@ -373,12 +396,15 @@ img {
 }
 .portfolio-border {
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .portfolio .title {
-  margin-left: 24px;
   margin-bottom: 4px;
   margin-top: 0px;
   color: var(--title-text-color);
@@ -388,8 +414,6 @@ img {
   letter-spacing: 0.06em;
 }
 .portfolio .card-description {
-  margin-left: 24px;
-  margin-top: 0px;
   margin-bottom: 0px;
   color: var(--primary-text-color);
   font-weight: 400;
