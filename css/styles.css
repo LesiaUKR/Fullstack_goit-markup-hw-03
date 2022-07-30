@@ -309,7 +309,7 @@ p {
   padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
-.footer .text {
+.footer-text {
   margin-bottom: 9px;
   color: var(--primary-white-color);
   font-weight: 400;
@@ -329,15 +329,15 @@ p {
   line-height: 1.19;
 }
 /*contacts footer*/
-.footer-contact-list .link {
+.footer-link {
   display: block;
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-contact-list .link:hover,
-.footer-contact-list .link:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--primary-white-color);
 }
 /*Фильтры Портфолио Наши работы*/
